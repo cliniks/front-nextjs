@@ -1,0 +1,45 @@
+.home_menuUser {
+  background: #2c2c2c;
+  color: white;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease 1s;
+  animation: slideDownIn 1s ease;
+  // gap: 100px;
+  // padding: 0 50px;
+
+  .-icons {
+    display: flex;
+
+    a {
+      padding: 0 10px;
+      color: white;
+      &:hover {
+        color: #dba2ec;
+      }
+    }
+  }
+  .UserIconArea {
+    margin-left: 20px;
+    width: 100%;
+    .-menuLogin {
+      color: #dba2ec;
+      font-family: "Montserrat";
+      font-weight: bolder;
+      transition: all ease 0.5s;
+      cursor: pointer;
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .UserArea {
+    // margin: 0 40px;
+    display: flex;
+    align-items: center;
+  }
+  @include defaultPadding;
+}

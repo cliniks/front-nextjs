@@ -1,0 +1,41 @@
+@mixin defaultPadding() {
+  padding: 20px 20vw;
+
+  @include responsive("lg") {
+    padding: 20px 12vw;
+  }
+  @include responsive("md") {
+    padding: 20px 8vw;
+  }
+  @include responsive("sm") {
+    padding: 20px 7vw;
+  }
+  @include responsive("xs") {
+    padding: 20px 2vw;
+  }
+}
+
+@mixin defaultLowPadding() {
+  padding: 20px 13vw;
+
+  @include responsive("lg") {
+    padding: 20px 3vw;
+  }
+  @include responsive("md") {
+    padding: 20px 2vw;
+  }
+  @include responsive("sm") {
+    padding: 20px 0vw;
+  }
+  @include responsive("xs") {
+    padding: 20px 0vw;
+  }
+}
+
+.paddingLg {
+  @include defaultPadding();
+}
+
+.lowPadding {
+  @include defaultLowPadding();
+}

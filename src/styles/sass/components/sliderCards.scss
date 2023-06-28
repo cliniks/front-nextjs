@@ -1,0 +1,72 @@
+.sliderCards {
+  overflow: hidden;
+  .-cards {
+    margin: 10px;
+    display: flex;
+    gap: 10px;
+
+    .boxCard {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-width: 230px;
+      background: linear-gradient(#d4d4d4, transparent);
+      border: 1px solid #acacac;
+      padding: 10px;
+      border-radius: 8px;
+      height: 230px;
+      @include sTransition;
+
+      img {
+        height: 70px;
+      }
+      h1 {
+        font-size: 1.1em;
+        text-align: center;
+        width: 90%;
+        font-weight: 700;
+        line-height: 22px;
+        margin: 10px 10px;
+        text-transform: uppercase;
+        color: #464646;
+      }
+      &:hover {
+        transform: scale(1.04);
+      }
+    }
+  }
+
+  @include defaultPadding;
+}
+
+.boxCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 230px;
+  background: linear-gradient(#d4d4d4, transparent);
+  border: 1px solid #acacac;
+  padding: 10px;
+  border-radius: 8px;
+  height: 230px;
+  @include sTransition;
+
+  img {
+    height: 70px;
+  }
+  h1 {
+    font-size: 1.1em;
+    text-align: center;
+    width: 90%;
+    font-weight: 700;
+    line-height: 22px;
+    margin: 10px 10px;
+    text-transform: uppercase;
+    color: #464646;
+  }
+  &:hover {
+    transform: scale(1.04);
+  }
+}
